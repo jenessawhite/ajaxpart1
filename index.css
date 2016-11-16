@@ -1,0 +1,71 @@
+h2{
+  text-align: center;
+}
+
+.ajax-title {
+  font-family: cursive;
+  color: #48142f;
+  text-align: center;
+}
+
+.table-title {
+  font-family: cursive;
+  color: #8723fa;
+  text-align: center;
+}
+
+.table_border {
+  border: 2px solid #05affb;
+}
+
+hr {
+  height: 30px;
+  border-style: solid;
+  border-color: #05affb;
+  border-width: 2px 0 0 0;
+  border-radius: 20px;
+}
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #05affb;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.center {
+  display: flex;
+  align-content: center;
+}
+
+.center img {
+  align-self: center;
+}
+/*
+a {
+  text-decoration:underline;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #1560fb;
+}*/
+
+.panel {
+    position: fixed;
+    left: -15.625em; /*right or left and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}
+
+.wrap {
+  position: relative;
+}

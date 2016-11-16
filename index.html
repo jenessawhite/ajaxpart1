@@ -5,19 +5,190 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" media="screen" title="no title">
   <link rel="stylesheet" href="index.css" media="screen" title="no title">
+  <link rel="stylesheet" href="twentytwenty.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="chocolat.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="headshrinker.css" media="screen" />
   <title>Ajax Part1</title>
 </head>
 
 <body>
-  Ready...GO
+  <header>
+    <img class="logo" src="assets/img/logo.png" alt="Logo" />
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Sub Options</a>
+          <ul>
+            <li><a href="#">Sub Menu One</a></li>
+            <li><a href="#">Sub Menu One</a></li>
+            <li><a href="#">Sub Menu One</a></li>
+            <li><a href="#">Sub Menu One</a></li>
+            <li><a href="#">Sub Menu One</a>
+              <ul>
+                <li><a href="#">Sub Menu Two</a></li>
+                <li><a href="#">Sub Menu Two</a></li>
+                <li><a href="#">Sub Menu Two</a></li>
+                <li><a href="#">Sub Menu Two</a></li>
+                <li><a href="#">Sub Menu Two</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Is A Basic</a></li>
+        <li><a href="#">Navigation System</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>My NBA Top 5 for 2016-2017:</h1>
+
+  <h2>Ready...GO</h2>
+
+  <br>
+  <hr>
+  <br>
+
+  <h1 class="ajax-title">My NBA Top 5 for 2016-2017:</h1>
   <ul id="playerlist"></ul>
 
+  <br>
+  <hr>
+  <br>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-  <script src="src/index.js" charset="utf-8"></script>
+  <h1 class="table-title">My NBA Top 5 Table Example</h1>
+  <div class="table_border">
+    <table id="example" class="display">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Years Active</th>
+          <th>PPG</th>
+          <th>RPG</th>
+          <th>APG</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Years Active</th>
+          <th>PPG</th>
+          <th>RPG</th>
+          <th>APG</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Steph Curry</td>
+          <td>PG</td>
+          <td>8</td>
+          <td>27.2</td>
+          <td>3.7</td>
+          <td>5.9</td>
+        </tr>
+        <tr>
+          <td>Paul George</td>
+          <td>SG</td>
+          <td>7</td>
+          <td>21</td>
+          <td>6.6</td>
+          <td>3.4</td>
+        </tr>
+        <tr>
+          <td>LeBron James</td>
+          <td>SF</td>
+          <td>13</td>
+          <td>22.9</td>
+          <td>8.9</td>
+          <td>9.1</td>
+        </tr>
+        <tr>
+          <td>Kevin Durant</td>
+          <td>PF</td>
+          <td>9</td>
+          <td>27.7</td>
+          <td>7.9</td>
+          <td>3.9</td>
+        </tr>
+        <tr>
+          <td>DeMarcus Cousins</td>
+          <td>C</td>
+          <td>7</td>
+          <td>26.6</td>
+          <td>8.6</td>
+          <td>2.7</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <h2> twentytwenty.</h2>
+  <p>
+    Check out this plugin <a href="http://zurb.com/playground/twentytwenty">twentytwenty!</a>
+  </p>
+
+  <div id="container1" class="twentytwenty-container center">
+    <img src="assets/sunrise.jpg" alt="Before: Sunrise" />
+    <img src="assets/sunset.jpg" alt="After: Sunset" />
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <h2>Email me!</h2>
+  <p>
+    This is a demonstration of <a href="http://mmoustafa.com/experiments/mailto/" target="_blank">jQuery Confirm mailto:</a> Test it out below
+  </p>
+  <a href="mailto:jenessaw31@gmail.com">Send me an email here!</a>
+
+  <br>
+  <hr>
+  <br>
+
+  <div class="chocolat-parent" data-chocolat-title="set title">
+    <a class="chocolat-image" href="assets/out.gif" title="caption image 1">
+      <img width="100" src="assets/out.gif" alt="Ayo I'm Out" />
+    </a>
+    <a class="chocolat-image" href="assets/obama.gif" title="caption image 2">
+      <img width="100" src="assets/obama.gif" alt="Obama Dancing" />
+    </a>
+    <a class="chocolat-image" href="assets/giphy.gif" title="caption image 3">
+      <img width="100" src="assets/giphy.gif" alt="Keep Moving Forward" />
+    </a>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="src/jquery.headshrinker.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+      jQuery('header').headshrinker({
+        fontSize: "17px",
+        mobileMenu: true
+      });
+    });
+
+  </script>
+
+  <script src="src/jquery-1.11.3.min.js"></script>
+
+  <script src="http//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+  <script src="src/jquery-2.1.0.min.js"></script>
+  <script src="src/jquery.event.move.js"></script>
+  <script src="src/jquery.twentytwenty.js"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="src/jquery.chocolat.js"></script>
+
+  <script src="src/index.js"></script>
 </body>
 
 </html>
