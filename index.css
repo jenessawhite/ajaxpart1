@@ -1,64 +1,29 @@
-h2{
+@font-face {
+	font-family: 'Fibon Sans';
+	src: url('FibonSans.eot');
+	src: url('FibonSans.eot?#iefix') format('embedded-opentype'),
+		url('FibonSans.woff2') format('woff2'),
+		url('FibonSans.woff') format('woff'),
+		url('FibonSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body{
+text-decoration: none;
+font-size: 16px;
+margin: 1rem;
+padding: 0;
+font-family: 'Fibon Sans', sans-serif;
+}
+
+h2, h1 {
   text-align: center;
 }
 
-.ajax-title {
-  font-family: cursive;
-  color: #48142f;
-  text-align: center;
-}
+#playerlist {
 
-.table-title {
-  font-family: cursive;
-  color: #8723fa;
-  text-align: center;
 }
-
-.table_border {
-  border: 2px solid #05affb;
-}
-
-hr {
-  height: 30px;
-  border-style: solid;
-  border-color: #05affb;
-  border-width: 2px 0 0 0;
-  border-radius: 20px;
-}
-hr:before {
-  display: block;
-  content: "";
-  height: 30px;
-  margin-top: -31px;
-  border-style: solid;
-  border-color: #05affb;
-  border-width: 0 0 1px 0;
-  border-radius: 20px;
-}
-
-.center {
-  display: flex;
-  align-content: center;
-}
-
-.center img {
-  align-self: center;
-}
-/*
-a {
-  text-decoration:underline;
-  color: black;
-}
-
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #1560fb;
-}*/
 
 .panel {
     position: fixed;
@@ -68,4 +33,58 @@ a:hover {
 
 .wrap {
   position: relative;
+}
+
+
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav-link {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  border-color: #1560fb;
+  font-size: 1.5em;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: white;
+  opacity: .8;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  border-color: #43fb60;
+
+}
+
+.email-btn_text {
+  width: 25%;
+  height: 50px;
+  background-color: #42FBca;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.email-btn_text:hover {
+  width: 25%;
+  height: 50px;
+  background-color: black;
+  color: #42FBca;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }

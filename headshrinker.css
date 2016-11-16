@@ -2,18 +2,18 @@
 
 	HeadShrinker v1.0.2
 	--------
-	
+
 	To be used with jquery.headshrinker.js by Chris Wharton (https://github.com/weare2ndfloor/HeadShrinker)
 
 ####################################################################### */
 
 
-/* 
+/*
 
-	The body class of "headshrinker" is added when the plugin is active 
+	The body class of "headshrinker" is added when the plugin is active
 
-	We also add a class of "headshrunk" onto the cloned header in case you want to overwrite CSS specifically	
-	
+	We also add a class of "headshrunk" onto the cloned header in case you want to overwrite CSS specifically
+
 */
 
 .headshrinker .headshrunk {
@@ -21,11 +21,11 @@
 }
 
 .headshrinker .headshrunk nav ul li a {
-	color: #34485d;
+	color: black;
 }
 
 .headshrinker .headshrunk nav ul li a:hover {
-	color: #3498db;
+	color: black;
 }
 
 .headshrinker .headshrunk a.headshrinker-reveal {
@@ -64,7 +64,9 @@
 .headshrinker .headshrunk .headshrinker-menu {
 	display: block;
 	width: 100%;
-	text-align: left;	
+	text-align: left;
+	margin-right: 1rem;
+
 }
 
 .headshrinker .headshrunk .headshrinker-menu ul, .headshrinker .headshrunk .headshrinker-menu li  {
@@ -73,12 +75,14 @@
 	padding: 0;
 	margin: 0;
 	position: relative;
+	margin-right: 1rem;
+
 }
 
 .headshrinker .headshrunk .headshrinker-menu a {
 	display: block;
 	background: #fff;
-	padding: 10px 20px !important;
+	padding: 1rem 2rem !important;
 	border-bottom: 1px solid #efefef;
 }
 
